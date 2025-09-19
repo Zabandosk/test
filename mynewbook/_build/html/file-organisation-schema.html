@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FILE ORGANISATION SCHEME &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'file-organisation-schema';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">FILE ORGANISATION SCHEME</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ffile-organisation-schema.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/file-organisation-schema.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>FILE ORGANISATION SCHEME</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-naming">FILE NAMING</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-hierarchy">FOLDER HIERARCHY</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heritage-data">HERITAGE DATA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sites">Sites</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing">Remote Sensing</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#media">Media</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">DOCUMENTATION</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-details">Dataset Details</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback">Feedback</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#templates">Templates</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reports">Reports</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="file-organisation-scheme">
+<h1>FILE ORGANISATION SCHEME<a class="headerlink" href="#file-organisation-scheme" title="Link to this heading">#</a></h1>
+<section id="file-naming">
+<h2>FILE NAMING<a class="headerlink" href="#file-naming" title="Link to this heading">#</a></h2>
+<p>File names can carry important information about the file itself, without needing to open it or read documentation. The main types of information a file name can convey include the date, the collection or group it belongs to (if any), the file’s title, the initials of the person who prepared it, and the version number.</p>
+<p>Here is an example format:
+yyyymmdd_Group_Title_Initials_version.format
+20250806_GAM_SitePoints_LB_v01.shp</p>
+<p>The reason for using the year-month-day system (YYYYMMDD) is to ensure that files are sorted chronologically when read by machines, since sorting is typically done from left to right. Using this naming system will help your files be ordered automatically by date.
+Avoid using spaces and special characters (such as ^, &amp;, %, ‘, “ etc.) in file and folder names. These may prevent systems from detecting or reading the files correctly, and in some cases, files may not upload or be analysed properly, especially when you’re dealing with a large number of files. This is also a common reason for issues with Arches when reading spreadsheet cells that include such characters.</p>
+<p>If you have a good version of a file and later need to make even a small change, always create a new copy. This way, if something goes wrong in the new version, you still have the previous, working version saved.
+These file naming standards can be applied to all types of data and are especially useful during ongoing work, as they make it easier to manage files on the path to a final version.
+In special cases, such as image files or resources related to a site where you are not the file’s creator, there is no need to include the creation date, initials, or version number. Instead, you can assign a unique ID and a short descriptive name to improve findability.</p>
+<p>Example:
+GAM-MED-000001_Wassu01.jpg
+GAM-MED-000002_Wassu02.jpg</p>
+<p>This approach avoids long names, spaces, and special characters, making your file names machine-readable and ensuring compatibility with Arches and other systems.
+The same logic applies to other information resources, e.g.:
+GAM-RES-000001_TitleOfDocument.pdf</p>
+</section>
+<section id="folder-hierarchy">
+<h2>FOLDER HIERARCHY<a class="headerlink" href="#folder-hierarchy" title="Link to this heading">#</a></h2>
+<p>There are two main categories of data you will produce during the process:</p>
+<p>Heritage Data, which includes:
+Sites
+Remote Sensing
+Media (e.g. images)
+Resources</p>
+<p>Documentation, which includes:
+Reports
+Feedback
+Dataset Details
+Templates</p>
+<p>Organizing your data in this way makes it easier to manage. Below is a brief overview of what kind of information should be in each folder and the formats expected, to help me check and prepare the data for final delivery.</p>
+<section id="heritage-data">
+<h3>HERITAGE DATA<a class="headerlink" href="#heritage-data" title="Link to this heading">#</a></h3>
+<p>This is the main group containing files and folders that represent heritage data in various formats and types.</p>
+<section id="sites">
+<h4>Sites<a class="headerlink" href="#sites" title="Link to this heading">#</a></h4>
+<p>Includes a Metadata folder (for spreadsheets) and a Geometry folder (for spatial data).
+In the Metadata folder, the working file should be in .xlsx format and named like:
+yyyymmdd_GAM_SiteMetadata_LB.xlsx
+Geometry/Points, Geometry/Polygons and Geometry/Lines folders must include each of the following file formats:
+.cpg, .dbf, .prj, .shp, .kml
+Each folder must have subfolder named as, so that we can follow the same
+Example:
+yyyymmdd_GAM_SitePoints_LB.dbf
+yyyymmdd_GAM_SitePolygons_LB.shp
+…</p>
+</section>
+<section id="remote-sensing">
+<h4>Remote Sensing<a class="headerlink" href="#remote-sensing" title="Link to this heading">#</a></h4>
+<p>Same structure as Sites: contains Metadata and Geometry folders.
+Metadata folder requires .xlsx as format and naming should be similar, just different in the title of the document part with RS (short for Remote Sensing).
+yyyymmdd_GAM_RSMetadata_LB.xlsx
+Geometry has two subfolders: Points (for specific locations) and Footprints (for area coverage). Files should follow the same naming conventions and formats  as above.
+Each folder has subfolder named as, so that we can follow the same
+yyyymmdd_GAM_ RSPoints_LB
+Files in “Geometry/Points” should be named as:
+yyyymmdd_GAM_RSPoints_LB.cpg
+yyyymmdd_GAM_RSPoints_LB.dbf
+…
+Files in “Geometry/Footprints” should be named as:
+yyyymmdd_GAM_RSFootprints_LB.cpg
+yyyymmdd_GAM_RSFootprints_LB.dbf
+…</p>
+</section>
+<section id="media">
+<h4>Media<a class="headerlink" href="#media" title="Link to this heading">#</a></h4>
+<p>Used for images or maybe for other media files in the future (e.g. 3D models, videos, audio).
+Contains a metadata spreadsheet:
+01_GAM_MediaMetadata_LB.xlsx
+(Using 01_ ensures it appears at the top of the folder list.)
+Media files should be named with unique IDs:
+GAM-MED-000001_Wassu01.jpg
+For now, considering the limited time, you may upload your files as they are. Just ensure they are in one of the accepted formats: .jpg, .jpeg, .png, .tiff.</p>
+</section>
+<section id="resources">
+<h4>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h4>
+<p>This folder includes source materials used while creating your metadata.</p>
+<p>Requires a metadata file:
+01_GAM_ResourceMetadata_LB.xlsx
+Documents should be stored in open, sustainable formats like .pdf, .pdf/a, .csv, .jpg, .jpeg, .png, .tiff, depending on content.
+Example:
+GAM-RES-000001_TitleOfResource.pdf
+Since you’re also using Zotero, and I’m not fully familiar with your setup, feel free to drop the documents directly for now.</p>
+</section>
+</section>
+<section id="documentation">
+<h3>DOCUMENTATION<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h3>
+<p>This main group is for related documents for your heritage data which enable us to communicate during the process and learn more about the dataset you manage.</p>
+<section id="dataset-details">
+<h4>Dataset Details<a class="headerlink" href="#dataset-details" title="Link to this heading">#</a></h4>
+<p>Dataset details is a required document. It should include:
+Responsible person(s)
+Contact information
+Dataset description (number of files, formats, associated media, etc.)
+Access and rights information
+This document allows me, or any future archaeologist, archivist, or even yourself, to understand the contents of your dataset. It also helps you keep track of your progress, especially when returning to the project after some time away.
+Use .docx during drafting and save the final version as .pdf or .pdf/a.
+Naming example:
+yyyymmdd_GAM_DatasetDetails_LB.pdf</p>
+</section>
+<section id="feedback">
+<h4>Feedback<a class="headerlink" href="#feedback" title="Link to this heading">#</a></h4>
+<p>This is where both of us will leave feedback.
+I will upload my reviews and feedback on specific files to this folder.
+Renier may also add feedback on Arches ingestion results.
+Feedback files should be named similarly to the original file, with “Feedback” and initials added.
+Examples:
+yyyymmdd_GAM_SiteMetadata_Feedback_OU.pdf
+yyyymmdd_GAM_SiteMetadata_Feedback_OU.xlsx
+My current feedback file on your Arches manual entries will be shared as:
+20250807_GAM_ArchesManualEntry_Feedback_OU.pdf</p>
+</section>
+<section id="templates">
+<h4>Templates<a class="headerlink" href="#templates" title="Link to this heading">#</a></h4>
+<p>Contains the latest versions of metadata schemas for:
+Sites
+Remote Sensing
+Media
+Dataset Details
+Please check this folder regularly to ensure you are using the correct version. I will also update you if we created new versions of our templates.</p>
+</section>
+<section id="reports">
+<h4>Reports<a class="headerlink" href="#reports" title="Link to this heading">#</a></h4>
+<p>This folder is for:
+Major updates about data lifecycle stages
+Virus scan reports
+Checksum reports (data integrity)
+You can skip this for now (Phase 1), but it’s important for later phases.
+ 
+HIERARCHY TREE
+Here is the link for the sample folder: <a class="reference external" href="https://drive.google.com/drive/u/1/folders/1QStNkjUmF8AfAXeaEsC48V0jMpJlGpzi">https://drive.google.com/drive/u/1/folders/1QStNkjUmF8AfAXeaEsC48V0jMpJlGpzi</a>
+Here is a way to show the structure:
+PHASE 1
+—GAM (Folder)
+——Heritage Data (Folder)
+———Sites (Folder)
+————Geometry (Folder)
+—————Points (Folder)
+——————yyyymmdd_CountryCode_SitePoints_PersonInitials.cpg
+——————yyyymmdd_CountryCode_SitePoints_PersonInitials.dbf
+——————yyyymmdd_CountryCode_SitePoints_PersonInitials.prj
+——————yyyymmdd_CountryCode_SitePoints_PersonInitials.shp
+——————yyyymmdd_CountryCode_SitePoints_PersonInitials.kml
+—————Polygons (Folder)
+——————yyyymmdd_CountryCode_SitePolygons_PersonInitials.cpg
+——————yyyymmdd_CountryCode_SitePolygons_PersonInitials.dbf
+——————yyyymmdd_CountryCode_SitePolygons_PersonInitials.prj
+——————yyyymmdd_CountryCode_SitePolygons_PersonInitials.shp
+——————yyyymmdd_CountryCode_SitePolygons_PersonInitials.kml
+—————Lines (Folder)
+————Metadata (Folder)
+—————“yyyymmdd_CountryCode_SiteMetadata_PersonInitials.xlsx”
+———Remote Sensing (Folder)
+————Metadata (Folder)
+—————“yyyymmdd_CountryCode _RSMetadata_PersonInitials.xlsx”
+————Geometry (Folder)
+—————Points (Folder)
+——————yyyymmdd_CountryCode_RSPoints_PersonInitials.cpg
+——————yyyymmdd_CountryCode_RSPoints_PersonInitials.dbf
+——————yyyymmdd_CountryCode_RSPoints_PersonInitials.prj
+——————yyyymmdd_CountryCode_RSPoints_PersonInitials.shp
+——————yyyymmdd_CountryCode_RSPoints_PersonInitials.kml
+—————Footprints (Folder)
+——————yyyymmdd_CountryCode_RSFootprints_PersonInitials.cpg
+——————yyyymmdd_CountryCode_RSFootprints_PersonInitials.dbf
+——————yyyymmdd_CountryCode_RSFootprints_PersonInitials.prj
+——————yyyymmdd_CountryCode_RSFootprints_PersonInitials.shp
+——————yyyymmdd_CountryCode_RSFootprints_PersonInitials.kml
+———Media (Folder)
+————yyyymmdd_CountryCode_MediaMetadata_PersonInitials.jpg
+————MediaID_MediaName.jpg
+———Resources (Folder)
+————yyyymmdd_CountryCode_ResourceMetadata_PersonInitials.jpg
+————ResourceID_TitleOfResource.pdf
+——Documentation (Folder)
+———Dataset Details (Folder)
+———Reports (Folder)
+———Feedback (Folder)
+———Templates (Folder)</p>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown-notebooks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-naming">FILE NAMING</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-hierarchy">FOLDER HIERARCHY</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heritage-data">HERITAGE DATA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sites">Sites</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#remote-sensing">Remote Sensing</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#media">Media</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">DOCUMENTATION</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-details">Dataset Details</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback">Feedback</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#templates">Templates</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reports">Reports</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
